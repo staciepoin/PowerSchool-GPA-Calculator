@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPress" prefHeight="446.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+    <children>
+        <Pane layoutX="46.0" layoutY="28.0" prefHeight="390.0" prefWidth="687.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <JFXTextField fx:id="user" focusColor="#09b6bc" layoutX="193.0" layoutY="177.0" maxWidth="301.0" minWidth="228.0" prefHeight="36.0" prefWidth="301.0" promptText="Username">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXTextField>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="132.0" layoutY="27.0" prefHeight="64.0" prefWidth="423.0" text="Powerschool - ASD">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+                <JFXPasswordField fx:id="pass" focusColor="#09b6bc" layoutX="197.0" layoutY="235.0" maxWidth="301.0" minWidth="228.0" prefHeight="31.0" prefWidth="294.0" promptText="Password">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </JFXPasswordField>
+                <JFXButton fx:id="login" layoutX="262.0" layoutY="295.0" onAction="#doLogin" prefHeight="36.0" prefWidth="165.0" ripplerFill="WHITE" style="-fx-background-color: #09b6bc;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </JFXButton>
+            </children>
+            <effect>
+                <DropShadow blurType="GAUSSIAN" color="#09b6bc" />
+            </effect>
+        </Pane>
+    </children>
+</AnchorPane>

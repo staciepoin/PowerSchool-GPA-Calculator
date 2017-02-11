@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <Pane layoutX="452.0" layoutY="44.0" prefHeight="389.0" prefWidth="307.0" style="-fx-background-color: #b5b5b5;">
+         <children>
+            <Label fx:id="GPA1" alignment="CENTER_RIGHT" layoutX="134.0" layoutY="8.0" prefHeight="60.0" prefWidth="165.0" text="GPA" textAlignment="RIGHT">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="25.0" prefHeight="27.0" prefWidth="112.0" text="Semester 1 GPA" />
+            <Label fx:id="GPA2" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="101.0" prefHeight="60.0" prefWidth="165.0" text="GPA" textAlignment="RIGHT">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="118.0" prefHeight="27.0" prefWidth="112.0" text="Semester 2 GPA" />
+            <Label fx:id="GPA3" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="315.0" prefHeight="60.0" prefWidth="165.0" text="GPA" textAlignment="RIGHT">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="332.0" prefHeight="27.0" prefWidth="102.0" text="cGPA" />
+         </children>
+      </Pane>
+      <Pane layoutX="17.0" layoutY="44.0" prefHeight="389.0" prefWidth="423.0" style="-fx-background-color: #b5b5b5;">
+         <children>
+            <TableView fx:id="table" layoutX="13.0" layoutY="11.0" prefHeight="368.0" prefWidth="397.0">
+              <columns>
+                <TableColumn fx:id="classCol" prefWidth="260.0" text="Class" />
+                <TableColumn fx:id="gradeCol" prefWidth="68.0" text="S1" />
+                  <TableColumn prefWidth="68.0" text="S2" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Label fx:id="userID" layoutX="542.0" layoutY="14.0" prefHeight="27.0" prefWidth="218.0" text="Hello, ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="refreshButton" layoutX="18.0" layoutY="6.0" onAction="#refresher" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #4c90ff;" text="UPDATE" />
+   </children>
+</AnchorPane>
