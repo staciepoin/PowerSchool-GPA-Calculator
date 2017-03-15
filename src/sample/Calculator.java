@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Rameez U. Saiyid on 1/12/2017.
+ * Forked by Stacie Poindexter on 3/15/2017.
  */
 
 
@@ -28,7 +29,7 @@ public class Calculator {
         pass = p;
         client = new PSLogin(user, pass);
         client.login();
-        page = client.get("https://powerschool.asd.edu.qa/guardian/home.html?showdropped=true");
+        page = client.get("https://ps.mpps.edzone.net/guardian/home.html?showdropped=true");
         doc = Jsoup.parse(page);
         System.out.println(doc.title());
     }
