@@ -179,7 +179,7 @@ public class loginController implements Initializable {
             Scene scene = new Scene(myPane);
             stage.setScene(scene);
             prevStage.close();
-            stage.setTitle("Powerschool - MPHS");
+            stage.setTitle("Powerschool - ASD");
             stage.show();
             setPrevStage(stage);
         } catch (IOException e) {
@@ -214,7 +214,7 @@ public class loginController implements Initializable {
                         Scene scene = new Scene(myPane);
                         stage.setScene(scene);
                         prevStage.close();
-                        stage.setTitle("Powerschool - MPHS");
+                        stage.setTitle("Powerschool - ASD");
                         stage.show();
                         setPrevStage(stage);
                     }
