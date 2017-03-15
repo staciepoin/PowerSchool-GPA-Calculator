@@ -26,7 +26,7 @@ public class PSLogin {
 
     public void login(){
 
-        String loginURL = "https://powerschool.asd.edu.qa/public/home.html";
+        String loginURL = "https://ps.mpps.edzone.net";
         try {
 
             HtmlPage loginPage = WEB_CLIENT.getPage(loginURL);
